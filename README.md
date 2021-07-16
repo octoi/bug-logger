@@ -1,75 +1,20 @@
-## Simple Electron React Boilerplate
+# Bug Logger
+Track your bug
+> An app using Electron, React, Mongo DB
 
-This is a simple boilerplate to get up and running with Electron and React. It is a customized version of [Alex Devero's](https://github.com/alexdevero/electron-react-webpack-boilerplate) repo and is used in my Electron course
+Project from Electron <a href="https://www.udemy.com/course/electron-from-scratch/">Electron From Scratch: Build Desktop Apps With JavaScript</a>
 
-### Install
-
-#### Clone this repo
-
+## Setup
+Install dependencies
+```bash
+$ npm install
+## Or yarn
+$ yarn install
 ```
-git clone https://github.com/bradtraversy/simple-electron-react.git
+Run project
+> check package.json for all scripts
+```bash
+$ npm run dev
+## Or yarn
+$ yarn dev
 ```
-
-#### Install dependencies
-
-```
-npm install
-```
-
-or
-
-```
-yarn
-```
-
-### Usage
-
-#### Run the app
-
-```
-npm run start
-```
-
-or
-
-```
-yarn start
-```
-
-#### Build the app (automatic)
-
-```
-npm run package
-```
-
-or
-
-```
-yarn package
-```
-
-#### Build the app (manual)
-
-```
-npm run build
-```
-
-or
-
-```
-yarn build
-```
-
-#### Test the app (after `npm run build` || `yarn run build`)
-
-```
-npm run prod
-```
-
-```
-yarn prod
-```
-
-### Change app title
-
-Change the app title in the **webpack.build.config.js** and the **webpack.dev.config.js** files
