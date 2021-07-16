@@ -24,7 +24,7 @@ function createMainWindow() {
         height: 800,
         show: false,
         backgroundColor: 'white',
-        icon: `${__dirname}/assets/icons/icon.png`,
+        icon: `${__dirname}/assets/icon.png`,
         webPreferences: {
             nodeIntegration: true,
         },
