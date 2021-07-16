@@ -52,3 +52,9 @@ ehthumbs.db
 # Windows shortcuts #
 #####################
 *.lnk
+
+
+# Environment variables #
+#########################
+.env
+.env.local
