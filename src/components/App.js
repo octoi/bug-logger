@@ -40,7 +40,6 @@ const App = () => {
         ipcRenderer.send('logs:load')
 
         ipcRenderer.on('logs:get', (e, logs) => {
-            console.log(logs)
             setLogs(JSON.parse(logs))
         });
     }, [])
@@ -51,9 +50,7 @@ const App = () => {
             return false
         }
 
-        item._id = Math.floor(Math.random() * 90000) + 10000
-        item.created = new Date().toString()
-        setLogs([...logs, item])
+        ipcRenderer.send('logs:add', item);
         showAlert('Log Added')
     }
 
